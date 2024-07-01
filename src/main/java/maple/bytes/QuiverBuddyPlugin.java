@@ -19,7 +19,7 @@ import java.util.Arrays;
 		description = "Shows the current ammo the player has equipped in their quiver (I would love C engineer to do a snarky voice comment when entering a raid without ammo)",
 		tags = {"bolts", "javelin", "sol", "colosseum", "equipment", "quiver", "ammo"}
 )
-public class QuiverAmmoPlugin extends Plugin
+public class QuiverBuddyPlugin extends Plugin
 {
 	@Inject
 	private Client client;
@@ -39,7 +39,7 @@ public class QuiverAmmoPlugin extends Plugin
 	private static final int QUIVER_ITEM_ID          = 4142;
 	private static final int QUIVER_ITEM_QUANTITY    = 4141;
 
-	private QuiverAmmoOverlay counterBox;
+	private QuiverBuddyOverlay counterBox;
 
 	private boolean quiverInContainer;
 
@@ -133,7 +133,7 @@ public class QuiverAmmoPlugin extends Plugin
 		}
 
 		removeInfobox();
-		counterBox = new QuiverAmmoOverlay(this, itemId, quantity, name, image);
+		counterBox = new QuiverBuddyOverlay(this, itemId, quantity, name, image);
 		infoBoxManager.addInfoBox(counterBox);
 	}
 

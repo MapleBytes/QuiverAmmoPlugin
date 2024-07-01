@@ -31,13 +31,13 @@ import net.runelite.client.util.QuantityFormatter;
 
 import java.awt.image.BufferedImage;
 //(I would love C engineer to do a snarky voice comment when entering a raid without ammo)
-class QuiverAmmoOverlay extends Counter
+class QuiverBuddyOverlay extends Counter
 {
 	@Getter
 	private final int itemID;
 	private final String name;
 
-	QuiverAmmoOverlay(Plugin plugin, int itemID, int count, String name, BufferedImage image)
+	QuiverBuddyOverlay(Plugin plugin, int itemID, int count, String name, BufferedImage image)
 	{
 		super(image, plugin, count);
 		this.itemID = itemID;

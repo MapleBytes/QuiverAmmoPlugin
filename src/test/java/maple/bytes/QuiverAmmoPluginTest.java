@@ -7,7 +7,7 @@ public class QuiverAmmoPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(QuiverAmmoPlugin.class);
+		ExternalPluginManager.loadBuiltin(QuiverBuddyPlugin.class);
 		RuneLite.main(args);
 	}
 }
